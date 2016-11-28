@@ -1,0 +1,27 @@
+/* =====================================================
+ Author: Webfonts
+ ========================================================================== */
+
+/*!
+ * Legal Disclaimer
+ *
+ * These Fonts are licensed only for use on these domains and their subdomains:
+ * advancedtelematic.com
+ *
+ * It is illegal to download or use them on other websites.
+ *
+ * While the @font-face statements below may be modified by the client, this
+ * disclaimer may not be removed.
+ *
+ * Lineto.com, 2013
+ */
+
+/* if webfonts don't work, check domain in htaccess in /fonts/ folder */
+
+@font-face {
+    font-family: 'i-picons';
+    src: url("http://advancedtelematic.com/fonts-icons/picons-font-icons.eot");
+    src: url("http://advancedtelematic.com/fonts-icons/picons-font-icons.eot?#iefix") format("embedded-opentype"), url("http://advancedtelematic.com/fonts-icons/picons-font-icons.woff") format("woff"), url("http://advancedtelematic.com/fonts-icons/picons-font-icons.ttf") format("truetype"), url("http://advancedtelematic.com/fonts-icons/picons-font-icons.svg#picons-fontfont") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
