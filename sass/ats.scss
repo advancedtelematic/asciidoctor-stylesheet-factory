@@ -46,4 +46,16 @@ p {
   @include single-box-shadow($panel-border-color, 0, 1px, 4px);
 }
 
+a {
+  border-bottom: 4px solid $mint;
+  color: rgba(0,0,0,0.675);
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: rgba(0,0,0,0.675);
+    border-bottom: 4px solid $gray;
+    text-decoration: none;
+}
+
 @import "components/print";
