@@ -8,18 +8,6 @@ dt, th.tableblock, td.content, div.footnote {
   text-rendering: optimizeLegibility;
 }
 
-// QUESTION should we tighten letter spacing of text in footnotes?
-h1, h2, p, td.content, span.alt {
-  letter-spacing: -0.01em;
-}
-
-p, td.content, div.footnote {
-  strong {
-    // NOTE needs to apply anywhere we have bold prose
-    letter-spacing: -0.005em;
-  }
-}
-
 // NOTE include blockquote for when it doesn't have a nested p
 p, blockquote, dt, td.content, span.alt {
   font-size: 1.0625rem;
@@ -40,12 +28,13 @@ p {
   //border-color: $panel-border-color;
   //@include single-box-shadow($panel-border-color, 0, 1px, 2px);
 
-  // light yellow
-  background-color: #fffef7; // from rgb(252,247,227), analogous to #f8f8f7
+  background-color: $mint; 
   border-color: $panel-border-color;
   @include single-box-shadow($panel-border-color, 0, 1px, 4px);
 }
 
+
+// fancy link text decoration
 a {
   border-bottom: 4px solid $mint;
   color: rgba(0,0,0,0.675);
@@ -54,8 +43,9 @@ a {
 
 a:hover, a:focus {
   color: rgba(0,0,0,0.675);
-    border-bottom: 4px solid $gray;
-    text-decoration: none;
+  border-bottom: 4px solid $gray;
+  text-decoration: none;
 }
+
 
 @import "components/print";
